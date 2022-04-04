@@ -6,5 +6,13 @@ input.onButtonPressed(Button.B, function () {
 })
 radio.setGroup(999)
 basic.forever(function () {
-	
+    if (receivedNumber == 66) {
+        basic.showLeds(`
+            # . . . #
+            . # . # .
+            . . # . .
+            . # . # .
+            # . . . #
+            `)
+    }
 })
